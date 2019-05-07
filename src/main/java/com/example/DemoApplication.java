@@ -9,7 +9,7 @@ import org.springframework.stereotype.*;
 @SpringBootApplication
 public class DemoApplication 
 {
-	//Single singlen = Single.laConstructora();
+	Single singlen = Single.laConstructora();
 
   @RequestMapping("/")
   @ResponseBody
