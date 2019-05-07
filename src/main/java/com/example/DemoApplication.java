@@ -13,9 +13,10 @@ public class DemoApplication
 
   @RequestMapping("/")
   @ResponseBody
-  void home() 
+  String home() 
   {
-     singlen.perro();
+     String perro = singlen.perro();
+     return perro;
   }
 
   @RequestMapping("/hello")

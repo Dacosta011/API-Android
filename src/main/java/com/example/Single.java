@@ -22,9 +22,9 @@ public class Single
       
   }
 
-  public void perro()
+  public String perro()
   {
-      System.out.println("PERRO SETENTACATREHIJUEPUTA");
+      return "PERRO SETENTACATREHIJUEPUTA");
   }
 
 
