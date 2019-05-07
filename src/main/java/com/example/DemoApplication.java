@@ -15,7 +15,7 @@ public class DemoApplication
   @ResponseBody
   String home() 
   {
-    singlen.perro();
+    return singlen.perro();
   }
 
   @RequestMapping("/hello")
