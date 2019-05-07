@@ -7,7 +7,9 @@ import org.springframework.stereotype.*;
 
 @Controller
 @SpringBootApplication
-public class DemoApplication {
+public class DemoApplication 
+{
+	Single singlen = Single.laConstructora();
 
   @RequestMapping("/")
   @ResponseBody
