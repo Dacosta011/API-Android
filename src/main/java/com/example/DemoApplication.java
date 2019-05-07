@@ -13,8 +13,9 @@ public class DemoApplication
 
   @RequestMapping("/")
   @ResponseBody
-  String home() {
-    return "Hello! This is a demo application linked to this tutorial: http://jkutner.github.io/2016/08/18/android-backend-api-heroku-retrofit.html";
+  String home() 
+  {
+    singlen.perro();
   }
 
   @RequestMapping("/hello")
