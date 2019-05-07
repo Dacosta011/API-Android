@@ -22,10 +22,16 @@ public class Single
       
   }
 
-  public String perro()
+  public void CrearEstudiante(String car, String cor, String con, String nom, String id)
   {
-      return "PERRO SETENTACATREHIJUEPUTA";
+    Estudiante tempo = new Estudiante(car,cor,con,nom,id);
+    estudiantes.add(tempo);
   }
 
+  public void CrearBibliotecario(String dir, String tel, String cor, String con, String nom, String id)
+  {
+    Bibliotecario tempo = new Bibliotecario(dir,tel,cor,con,nom,id);
+    bibliocarios.add(tempo);
+  }
 
 }
