@@ -22,7 +22,7 @@ public class DemoApplication
   @ResponseBody
   int sumar(int uno, int dos) 
   {
-     int a = singlen.CrearEstudiante(uno,dos);
+     int a = singlen.suma(uno,dos);
      return a;
   }
 
