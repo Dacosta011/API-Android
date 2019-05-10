@@ -34,4 +34,12 @@ public class Single
     bibliocarios.add(tempo);
   }
 
+  public int suma(int uno , int dos )
+  {
+    int tres;
+    tres = uno + dos ;
+
+    return tres;
+  }
+
 }

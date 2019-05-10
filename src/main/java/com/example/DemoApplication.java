@@ -18,6 +18,21 @@ public class DemoApplication
      return"hola";
   }
 
+  @RequestMapping("/sumar")
+  @ResponseBody
+  int sumar(int uno, int dos) 
+  {
+     int a = singlen.CrearEstudiante(uno,dos);
+     return a;
+  }
+
+  @RequestMapping("/CreaEstudiante")
+  @ResponseBody
+  void CreaEstudiante(String car, String cor ,String con, String nom , String id) 
+  {
+     singlen.CrearEstudiante(car,cor,con,nom,id);
+  }
+
   @RequestMapping("/hello")
   @ResponseBody
   String hello() {
