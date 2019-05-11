@@ -20,7 +20,7 @@ public class DemoApplication
 
   @RequestMapping("/sumar")
   @ResponseBody
-  int sumar(int uno, int dos) 
+  int sumar(String uno, String dos) 
   {
      int a = singlen.suma(uno,dos);
      return a;

@@ -34,10 +34,10 @@ public class Single
     bibliocarios.add(tempo);
   }
 
-  public int suma(int uno , int dos )
+  public int suma(String uno , String dos )
   {
     int tres;
-    tres = uno + dos ;
+    tres = Integer.parseInt(uno) +Integer.parseInt(dos) ;
 
     return tres;
   }
