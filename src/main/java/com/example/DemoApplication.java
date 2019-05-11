@@ -18,13 +18,6 @@ public class DemoApplication
      return"hola";
   }
 
-  @RequestMapping("/sumar")
-  @ResponseBody
-  int sumar(String uno, String dos) 
-  {
-     int a = singlen.suma(uno,dos);
-     return a;
-  }
 
   @RequestMapping("/CreaEstudiante")
   @ResponseBody
