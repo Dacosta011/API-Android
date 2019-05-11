@@ -8,6 +8,9 @@ public class Single
  
   private ArrayList <Estudiante> estudiantes = new ArrayList <Estudiante> ();
   private ArrayList <Bibliotecario> bibliocarios = new ArrayList <Bibliotecario> ();
+  private ArrayList <Libro> libros = new ArrayList <Libro> ();
+  private ArrayList <Prestamo> prestamos = new ArrayList <Prestamo>();
+  private ArrayList <Reserva> reservas = new ArrayList <Reserva>();
   
   public static Single laConstructora() 
 
@@ -34,12 +37,22 @@ public class Single
     bibliocarios.add(tempo);
   }
 
-  public int suma(String uno , String dos )
+  public void crearLibro(String isbn , String nom, String des, String aut, int can, String paCla)
   {
-    int tres;
-    tres = Integer.parseInt(uno) +Integer.parseInt(dos) ;
+    Libro tempo = new Libro(isbn,nom,des,aut,can,paCla);
+    libros.add(tempo);
+  } 
 
-    return tres;
-  }
+  public void crearReserva(String isbn, String codigoE, String fechaRe)
+  {
+    Reserva tempo = new Reserva(isbn,codigoE,fechaRe);
+    reservas.add(tempo);
+  } 
+
+  public void crearPrestamo(String isbn , String codigoE, String fechaEn)
+  {
+    Prestamo tempo =  new Prestamo(isbn,codigoE,fechaEn);
+    prestamos.add(tempo);
+  } 
 
 }
