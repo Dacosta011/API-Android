@@ -72,7 +72,7 @@ public class Single
     }
   } 
 
-  public ArrayList<libro> getLibros()
+  public ArrayList<Libro> getLibros()
   {
     ArrayList<Libro> lista = new ArrayList<Libro>();
     for(Libro libro : libros)
@@ -88,7 +88,7 @@ public class Single
 
     for(Libro libro : lista)
     {
-      if (libro.getISBN.equals(isbn)) 
+      if (libro.getISBN().equals(isbn)) 
       {
          lista.remove(libro);
       }
