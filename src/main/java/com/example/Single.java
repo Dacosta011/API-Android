@@ -88,6 +88,7 @@ public class Single
     {
       lista.add(reserva);
     }
+    return lista;
   }
 
   public void eliminarLibro(String isbn)
