@@ -47,12 +47,54 @@ public class Single
   {
     Reserva tempo = new Reserva(isbn,codigoE,fechaRe);
     reservas.add(tempo);
+
   } 
 
   public void crearPrestamo(String isbn , String codigoE, String fechaEn)
   {
     Prestamo tempo =  new Prestamo(isbn,codigoE,fechaEn);
     prestamos.add(tempo);
+
+    for(Prestamo prestamo : prestamos)
+    {
+      if(prestamo.getCodigoEstu().equals(codigoE))
+      {
+        String is = prestamo.getISBN();
+        for(Libro libro : libros)
+        {
+          if (libro.getISBN().equals(is)) 
+          {
+            int can = libro.getCantidad();
+            libro.setCantidad(can-1);
+          }
+        }
+      }
+    }
   } 
+
+  public ArrayList<libro> getLibros()
+  {
+    ArrayList<Libro> lista = new ArrayList<Libro>();
+    for(Libro libro : libros)
+    {
+      lista.add(libro);
+    }
+    return lista;
+  }
+
+  public void eliminarLibro(String isbn)
+  {
+    ArrayList<Libro> lista = this.getLibros();
+
+    for(Libro libro : lista)
+    {
+      if (libro.getISBN.equals(isbn)) 
+      {
+         lista.remove(libro);
+      }
+    }
+  }
+
+
 
 }
