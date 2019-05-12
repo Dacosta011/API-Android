@@ -81,6 +81,14 @@ public class Single
     }
     return lista;
   }
+  public ArrayList<Reserva> getReservas()
+  {
+    ArrayList<Reserva> lista = new ArrayList<Reserva>();
+    for(Reserva reserva : reservas)
+    {
+      lista.add(reserva);
+    }
+  }
 
   public void eliminarLibro(String isbn)
   {
@@ -93,6 +101,19 @@ public class Single
          lista.remove(libro);
       }
     }
+  }
+
+  public void eliminarReserva(String isbn)
+  {
+    ArrayList<Reserva> lista = this.getReservas();
+    for(Reserva reserva : lista)
+    {
+      if (reserva.getISBN().equals(isbn)) 
+      {
+        lista.remove(reserva);
+      }
+    }
+
   }
 
 
