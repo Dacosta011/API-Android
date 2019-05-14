@@ -21,9 +21,13 @@ public class DemoApplication
 
   @RequestMapping("/CreaEstudiante")
   @ResponseBody
-  void CreaEstudiante(String car, String cor ,String con, String nom , String id) 
+  String CreaEstudiante(String car, String cor ,String con, String nom , String id) 
   {
-     singlen.CrearEstudiante(car,cor,con,nom,id);
+  	String nombre = nom;
+  	String carrera = car;
+
+  	return "ESTUDIANTE: "+ nombre + " DE LA CARRERA: "+carrera;
+     //singlen.CrearEstudiante(car,cor,con,nom,id);
   }
 
   @RequestMapping("/hello")
