@@ -51,7 +51,8 @@ public class DemoApplication
   @RequestMapping("/lok")
   @ResponseBody
   String lok() {
-     ArrayList<Estudiante> si = tempo.getEstudiantes();
+
+     ArrayList<Estudiante> si = singlen.getEstudiantes();
      String datos = si.toString();
 
      return datos;
