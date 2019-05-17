@@ -21,10 +21,10 @@ public class DemoApplication
 
   @RequestMapping("/CreaEstudiante")
   @ResponseBody
-  String CreaEstudiante(String car, String cor ,String con, String nom , String id) 
+  String CreaEstudiante(String carrera, String correo ,String contraseña, String nombre , String id) 
   {
-  	String nombre = nom;
-  	String carrera = car;
+  	String nom = nombre;
+  	String car = carrera;
 
   	return "ESTUDIANTE: "+ nombre + " DE LA CARRERA: "+carrera;
      //singlen.CrearEstudiante(car,cor,con,nom,id);
@@ -40,3 +40,49 @@ public class DemoApplication
     SpringApplication.run(DemoApplication.class, args);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Call<ResponseBody> call = service.CreaEstudiante(car, cor, con, nom, id);
+
+                call.enqueue(new Callback<ResponseBody>() {
+                    @Override
+                    public void onResponse(Call<ResponseBody> _call,
+                                           Response<ResponseBody> response) {
+                        try {
+                            String resp = response.body().string();
+                            Toast.makeText(RegistroEstudiante.this,"Toast desde Servlet ->"+resp, Toast.LENGTH_SHORT).show();
+
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+
+
+                    @Override
+                    public void onFailure(Call<ResponseBody> call, Throwable t) {
+                        Toast.makeText(RegistroEstudiante.this, "Error :( ",Toast.LENGTH_SHORT).show();
+                    }
+                });
