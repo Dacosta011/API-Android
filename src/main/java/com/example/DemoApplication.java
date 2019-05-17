@@ -21,7 +21,7 @@ public class DemoApplication
 
   @RequestMapping("/CreaEstudiante")
   @ResponseBody
-  String CreaEstudiante(String carrera, String correo ,String contraseña, String nombre , String id) 
+  String CreaEstudiante(String carrera1, String correo1 ,String contraseña1, String nombre1 , String id1) 
   {
   	String nom = nombre;
   	String car = carrera;
