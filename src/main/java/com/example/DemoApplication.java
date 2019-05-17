@@ -23,10 +23,10 @@ public class DemoApplication
   @ResponseBody
   String CreaEstudiante(String carrera1, String correo1 ,String contraseña1, String nombre1 , String id1) 
   {
-  	String nom = nombre;
-  	String car = carrera;
+  	String nom = nombre1;
+  	String car = carrera1;
 
-  	return "ESTUDIANTE: "+ nombre + " DE LA CARRERA: "+carrera;
+  	return "ESTUDIANTE: "+ nom + " DE LA CARRERA: "+car;
      //singlen.CrearEstudiante(car,cor,con,nom,id);
   }
 
