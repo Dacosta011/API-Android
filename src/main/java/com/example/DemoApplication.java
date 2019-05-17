@@ -43,14 +43,11 @@ public class DemoApplication
   String hello() {
     return "Hello from Heroku!";
   }
-
-  public static void main(String[] args) {
-    SpringApplication.run(DemoApplication.class, args);
-  }
-
+  
   @RequestMapping("/lok")
   @ResponseBody
-  String lok() {
+  String lok() 
+  {
 
      ArrayList<Estudiante> si = singlen.getEstudiantes();
      String datos = si.toString();
@@ -58,7 +55,8 @@ public class DemoApplication
      return datos;
   }
 
-  public static void main(String[] args) {
+  public static void main(String[] args) 
+  {
     SpringApplication.run(DemoApplication.class, args);
   }
 }
