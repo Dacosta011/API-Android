@@ -65,7 +65,7 @@ public class DemoApplication
 
 
 
-Call<ResponseBody> call = service.CreaEstudiante(car, cor, con, nom, id);
+/*Call<ResponseBody> call = service.CreaEstudiante(car, cor, con, nom, id);
 
                 call.enqueue(new Callback<ResponseBody>() {
                     @Override
@@ -85,4 +85,4 @@ Call<ResponseBody> call = service.CreaEstudiante(car, cor, con, nom, id);
                     public void onFailure(Call<ResponseBody> call, Throwable t) {
                         Toast.makeText(RegistroEstudiante.this, "Error :( ",Toast.LENGTH_SHORT).show();
                     }
-                });
+                });*/
