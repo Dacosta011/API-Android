@@ -25,9 +25,16 @@ public class DemoApplication
   {
   	String nom = nombre1;
   	String car = carrera1;
+  	String cor = correo1;
+  	String con = contraseña1;
+  	String id = id1;
+  	String ret = "";
 
-  	return "ESTUDIANTE: "+ nom + " DE LA CARRERA: "+car;
-     //singlen.CrearEstudiante(car,cor,con,nom,id);
+	singlen.CrearEstudiante(car,cor,con,nom,id);  	
+  	
+	ret = "ESTUDIANTE: "+ nom + " DE LA CARRERA: "+ car;
+   
+   	return ret; 
   }
 
   @RequestMapping("/hello")
