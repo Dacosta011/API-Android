@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.stereotype.*;
+import java.util.ArrayList;
 
 @Controller
 @SpringBootApplication
@@ -41,6 +42,19 @@ public class DemoApplication
   @ResponseBody
   String hello() {
     return "Hello from Heroku!";
+  }
+
+  public static void main(String[] args) {
+    SpringApplication.run(DemoApplication.class, args);
+  }
+
+  @RequestMapping("/lok")
+  @ResponseBody
+  String lok() {
+     ArrayList<Estudiante> si = tempo.getEstudiantes();
+     String datos = si.toString();
+
+     return datos;
   }
 
   public static void main(String[] args) {

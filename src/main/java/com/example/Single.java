@@ -90,6 +90,15 @@ public class Single
     }
     return lista;
   }
+  public ArrayList<Estudiante> getEstudiantes()
+  {
+    ArrayList<Estudiante>lista = new ArrayList<Estudiante>();
+    for(Estudiante estudiante : estudiantes)
+    {
+      lista.add(estudiante);
+    }
+    return lista;
+  }
 
   public void eliminarLibro(String isbn)
   {
@@ -116,6 +125,7 @@ public class Single
     }
 
   }
+
   
 
 
