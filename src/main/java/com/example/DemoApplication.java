@@ -43,6 +43,17 @@ public class DemoApplication
   String hello() {
     return "Hello from Heroku!";
   }
+
+
+  @RequestMapping("/InicioEstudiante")
+  @ResponseBody
+  boolean InicioEstudiante(String correoEstu ,String contraseñaEstu) 
+  {
+  	boolean si = sinnglen.inicioEstu(correo,contraseña);
+
+  	return si;
+     
+  }
   
   @RequestMapping("/lok")
   @ResponseBody

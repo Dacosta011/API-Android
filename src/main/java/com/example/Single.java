@@ -100,6 +100,19 @@ public class Single
     return lista;
   }
 
+  public boolean inicioEstu(String correo , String contraseña)
+  {
+    boolean ok = false;
+    for (Estudiante estu : estudiantes) 
+    {
+      if (estu.getCorreo().equals(correo) && estu.getContraseña().equals(contraseña)) 
+      {
+        ok = true;  
+      }
+    }
+    return ok;
+  }
+
   public void eliminarLibro(String isbn)
   {
     ArrayList<Libro> lista = this.getLibros();
