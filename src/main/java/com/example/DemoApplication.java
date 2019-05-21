@@ -33,7 +33,7 @@ public class DemoApplication
 
 	singlen.CrearEstudiante(car,cor,con,nom,id);  	
   	
-	ret = "ESTUDIANTE: "+ nom + " DE LA CARRERA: "+ car;
+	ret = "El estudiante fue registrado correctamente ";
    
    	return ret; 
   }
