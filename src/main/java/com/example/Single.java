@@ -151,7 +151,7 @@ public class Single
     ArrayList<Reserva> lista = this.getReservas();
     for(Reserva reserva : lista)
     {
-      if (reserva.getISBN().equals(isbn)) 
+      if (reserva.getISBN().equals(numero)) 
       {
         lista.remove(reserva);
       }
