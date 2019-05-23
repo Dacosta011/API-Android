@@ -103,6 +103,26 @@ public class DemoApplication
    	return ret; 
   }
 
+  @RequestMapping("/eliminarLibro")
+  @ResponseBody
+  String eliminarLibro(String isbn6) 
+  {
+  	singlen.eliminarLibro(isbn);
+
+  	return "El libro fue eliminado ; 	
+     
+  }
+
+  @RequestMapping("/eliminarReserva")
+  @ResponseBody
+  String eliminarReserva(String numeroReserva) 
+  {
+  	singlen.eliminarLibro(numeroReserva);
+
+  	return "La reserva fue eliminada  ; 	
+     
+  }
+
 
 
   @RequestMapping("/InicioEstudiante")
