@@ -113,6 +113,20 @@ public class Single
     return ok;
   }
 
+  public boolean inicioBiblio(String correo , String contraseña)
+  {
+    boolean ok = false;
+    for (Bibliotecario biblio : bibliocarios) 
+    {
+      if (biblio.getCorreo().equals(correo) && biblio.getContraseña().equals(contraseña)) 
+      {
+        ok = true;  
+      }
+    }
+    return ok;
+  }
+
+
   public void eliminarLibro(String isbn)
   {
     ArrayList<Libro> lista = this.getLibros();

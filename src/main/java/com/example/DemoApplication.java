@@ -54,6 +54,16 @@ public class DemoApplication
   	return si;
      
   }
+
+  @RequestMapping("/InicioBibliotecario")
+  @ResponseBody
+  boolean InicioEstudiante(String correoBiblio ,String contraseñaBiblio) 
+  {
+  	boolean si = singlen.inicioEstu(correoEstu,contraseñaEstu);
+
+  	return si;
+     
+  }
   
   @RequestMapping("/lok")
   @ResponseBody
