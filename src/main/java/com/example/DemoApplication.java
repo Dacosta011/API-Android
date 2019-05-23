@@ -57,6 +57,26 @@ public class DemoApplication
    	return ret; 
   }
 
+  @RequestMapping("/CreaLibro")
+  @ResponseBody
+  String CreaLibro(String isbn3, String nombre3 ,String descripcion3, String autor3 , String cantidad3 , String paClave3) 
+  {
+  	String nom = nombre3;
+  	String is = isbn1;
+  	String des = descripcion3;
+  	String au = autor3;
+  	String can = cantidad3;
+  	String pc = paClave3;
+  	String ret = "";
+
+	singlen.CreaLibro(is,nom,des,au,can,pc);  	
+  	
+	ret = "El estudiante fue registrado correctamente ";
+   
+   	return ret; 
+  }
+
+
   @RequestMapping("/hello")
   @ResponseBody
   String hello() {
