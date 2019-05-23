@@ -57,7 +57,7 @@ public class DemoApplication
 
   @RequestMapping("/InicioBibliotecario")
   @ResponseBody
-  boolean InicioEstudiante(String correoBiblio ,String contraseñaBiblio) 
+  boolean inicioBiblio(String correoBiblio ,String contraseñaBiblio) 
   {
   	boolean si = singlen.inicioBiblio(correoBiblio,contraseñaBiblio);
 
