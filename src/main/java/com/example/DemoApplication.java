@@ -109,7 +109,7 @@ public class DemoApplication
   {
   	singlen.eliminarLibro(isbn);
 
-  	return "El libro fue eliminado ; 	
+  	return "El libro fue eliminado" ; 	
      
   }
 
@@ -117,9 +117,9 @@ public class DemoApplication
   @ResponseBody
   String eliminarReserva(String numeroReserva) 
   {
-  	singlen.eliminarLibro(numeroReserva);
+  	singlen.eliminarLibro(numeroReserva); 
 
-  	return "La reserva fue eliminada  ; 	
+  	return "La reserva fue eliminada"  ; 	
      
   }
 
