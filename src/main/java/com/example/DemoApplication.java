@@ -69,7 +69,7 @@ public class DemoApplication
   	String pc = paClave3;
   	String ret = "";
 
-	singlen.CreaLibro(is,nom,des,au,can,pc);  	
+	singlen.CrearLibro(is,nom,des,au,can,pc);  	
   	
 	ret = "El estudiante fue registrado correctamente ";
    
