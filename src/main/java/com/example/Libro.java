@@ -5,7 +5,7 @@ public class Libro
     private String nombre;
     private String descripcion;
     private String autor;
-    private int cantidad;
+    private String cantidad;
     private String palabrasClave;
 
     public Libro() 
@@ -19,7 +19,7 @@ public class Libro
         
     }
 
-    public Libro(String ISBN, String nombre, String descripcion, String autor, int cantidad, String palabrasClave) 
+    public Libro(String ISBN, String nombre, String descripcion, String autor, String cantidad, String palabrasClave) 
     {
         this.ISBN = ISBN;
         this.nombre = nombre;
@@ -79,11 +79,11 @@ public class Libro
         this.nombre = nombre;
     }
 
-    public int getCantidad() {
+    public String getCantidad() {
         return cantidad;
     }
 
-    public void setCantidad(int cantidad) {
+    public void setCantidad(String cantidad) {
         this.cantidad = cantidad;
     }
     

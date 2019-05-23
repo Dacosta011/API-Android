@@ -37,7 +37,7 @@ public class Single
     bibliocarios.add(tempo);
   }
 
-  public void CrearLibro(String isbn , String nom, String des, String aut, int can, String paCla)
+  public void CrearLibro(String isbn , String nom, String des, String aut, String can, String paCla)
   {
     Libro tempo = new Libro(isbn,nom,des,aut,can,paCla);
     libros.add(tempo);
