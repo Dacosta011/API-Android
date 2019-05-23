@@ -15,7 +15,7 @@ public class Libro
         this.autor="";
         this.descripcion="";
         this.palabrasClave="";
-        this.cantidad=0;
+        this.cantidad="";
         
     }
 

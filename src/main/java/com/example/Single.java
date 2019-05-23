@@ -64,8 +64,9 @@ public class Single
         {
           if (libro.getISBN().equals(is)) 
           {
-            int can = libro.getCantidad();
-            libro.setCantidad(can-1);
+            String can = libro.getCantidad();
+            int can2 = Integer.parseInt(can)
+            libro.setCantidad(can2-1);
           }
         }
       }
