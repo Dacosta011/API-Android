@@ -38,6 +38,25 @@ public class DemoApplication
    	return ret; 
   }
 
+  @RequestMapping("/CreaBibliotecario")
+  @ResponseBody
+  String CreaBibliotecario(String direccion2, String telefono2 ,String correo2, String contraseña2 , String nombre2 , String id2) 
+  {
+  	String nom = nombre2;
+  	String dir = direccion2;
+  	String tel = telefono2;
+  	String cor = correo2;
+  	String con = contraseña2;
+  	String id = id2;
+  	String ret = "";
+
+	singlen.CrearBibliotecario(dir,tel,cor,con,nom,id);  	
+  	
+	ret = "El estudiante fue registrado correctamente ";
+   
+   	return ret; 
+  }
+
   @RequestMapping("/hello")
   @ResponseBody
   String hello() {
