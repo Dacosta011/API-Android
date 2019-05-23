@@ -79,7 +79,7 @@ public class DemoApplication
 
   	String ret = "";
 
-	singlen.CrearLibro(cod,is,fe,nu);  	
+	singlen.crearReserva(cod,is,fe,nu);  	
   	
 	ret = "El estudiante fue registrado correctamente ";
    
