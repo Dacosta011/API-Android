@@ -107,7 +107,7 @@ public class DemoApplication
   @ResponseBody
   String eliminarLibro(String isbn6) 
   {
-  	singlen.eliminarLibro(isbn);
+  	singlen.eliminarLibro(isbn6);
 
   	return "El libro fue eliminado" ; 	
      
