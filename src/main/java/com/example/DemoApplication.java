@@ -103,16 +103,6 @@ public class DemoApplication
    	return ret; 
   }
 
-  @RequestMapping("/eliminarLibro")
-  @ResponseBody
-  String eliminarLibro(String isbn6) 
-  {
-
-    Single.eliminarLibro(isbn6);
-
-     return "El libro a sido eliminado ";
-  }
-
 
 
   @RequestMapping("/InicioEstudiante")
@@ -146,15 +136,7 @@ public class DemoApplication
      return datos;
   }
 
-  @RequestMapping("/eliminarReserva")
-  @ResponseBody
-  String eliminarReserva(String numeroReserva) 
-  {
-
-    Single.getEstudiantes();
-
-     return "La reserva a sido eliminada ";
-  }
+  
 
   public static void main(String[] args) 
   {
