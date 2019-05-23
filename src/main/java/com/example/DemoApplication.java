@@ -59,7 +59,7 @@ public class DemoApplication
   @ResponseBody
   boolean InicioEstudiante(String correoBiblio ,String contraseñaBiblio) 
   {
-  	boolean si = singlen.inicioEstu(correoEstu,contraseñaEstu);
+  	boolean si = singlen.inicioBiblio(correoEstu,contraseñaEstu);
 
   	return si;
      
