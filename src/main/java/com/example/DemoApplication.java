@@ -86,6 +86,23 @@ public class DemoApplication
    	return ret; 
   }
 
+  @RequestMapping("/CreaPrestamo")
+  @ResponseBody
+  String CrearPrestamo(String isbn5, String codigoE5, String fechaEn5 ) 
+  {
+  	String cod = codigoE5;
+  	String is = isbn5;
+  	String fe = fechaEn4;
+
+  	String ret = "";
+
+	singlen.crearReserva(cod,is,fe);  	
+  	
+	ret = "El estudiante fue registrado correctamente ";
+   
+   	return ret; 
+  }
+
 
 
   @RequestMapping("/InicioEstudiante")
