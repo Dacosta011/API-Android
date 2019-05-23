@@ -92,11 +92,11 @@ public class DemoApplication
   {
   	String cod = codigoE5;
   	String is = isbn5;
-  	String fe = fechaEn4;
+  	String fe = fechaEn5;
 
   	String ret = "";
 
-	singlen.crearReserva(cod,is,fe);  	
+	singlen.crearPrestamo(cod,is,fe);  	
   	
 	ret = "El estudiante fue registrado correctamente ";
    
