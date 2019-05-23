@@ -146,7 +146,7 @@ public class Single
     }
   }
 
-  public void eliminarReserva(String isbn)
+  public void eliminarReserva(String numero)
   {
     ArrayList<Reserva> lista = this.getReservas();
     for(Reserva reserva : lista)
