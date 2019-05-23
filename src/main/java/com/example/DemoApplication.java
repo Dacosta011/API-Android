@@ -62,7 +62,7 @@ public class DemoApplication
   String CreaLibro(String isbn3, String nombre3 ,String descripcion3, String autor3 , String cantidad3 , String paClave3) 
   {
   	String nom = nombre3;
-  	String is = isbn1;
+  	String is = isbn3;
   	String des = descripcion3;
   	String au = autor3;
   	String can = cantidad3;
