@@ -43,9 +43,9 @@ public class Single
     libros.add(tempo);
   } 
 
-  public void crearReserva(String isbn, String codigoE, String fechaRe)
+  public void crearReserva(String isbn, String codigoE, String fechaRe , String numRe)
   {
-    Reserva tempo = new Reserva(isbn,codigoE,fechaRe);
+    Reserva tempo = new Reserva(isbn,codigoE,fechaRe,numRe);
     reservas.add(tempo);
 
   } 
