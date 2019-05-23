@@ -66,7 +66,12 @@ public class Single
           {
             String can = libro.getCantidad();
             int can2 = Integer.parseInt(can);
-            libro.setCantidad(can2-1);
+
+            int resta = can2-1
+
+            String resutado = Integer.toString(resta);
+
+            libro.setCantidad(resutado);
           }
         }
       }
