@@ -138,7 +138,7 @@ public class Single
     ArrayList<Lista>lista = new ArrayList<Libro>();
     for(Libro libro : libros)
     {
-      if (isbn.equals(libro.getISBN()) 
+      if (isbn.equals(libro.getISBN())) 
       {
         lista.add(libro);
       }
@@ -151,7 +151,7 @@ public class Single
     ArrayList<Reserva>lista = new ArrayList<Reserva>();
     for(Reserva reserva : reservas)
     {
-      if (numeroRe.equals(Reserva.getNumeroReserva()) 
+      if (numeroRe.equals(Reserva.getNumeroReserva())) 
       {
         lista.add(reserva);
       }
