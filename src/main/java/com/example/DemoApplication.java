@@ -205,7 +205,7 @@ public class DemoApplication
   String ActualizaEstu(String nombre ,String carrera , String correo , String contraseña) 
   {
 
-     String si = singlen.buscaReserva(numeroRe);
+     String si = singlen.actualizarEstu(nombre,carrera,correo,contraseña);
      String datos = si.toString();
 
      return datos;

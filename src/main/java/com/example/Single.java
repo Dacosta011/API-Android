@@ -214,7 +214,7 @@ public class Single
 
   public String actualizarEstu(String nombre ,String carrera ,String correo ,String contraseña)
   {
-    String respuesta;
+    String respuesta = "";
 
     for (Estudiante estu : estudiantes) 
     {
