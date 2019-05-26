@@ -96,12 +96,65 @@ public class Single
     }
     return lista;
   }
+
   public ArrayList<Estudiante> getEstudiantes()
   {
     ArrayList<Estudiante>lista = new ArrayList<Estudiante>();
     for(Estudiante estudiante : estudiantes)
     {
       lista.add(estudiante);
+    }
+    return lista;
+  }
+
+  public ArrayList<Estudiante> buscaEstu(String codigo)
+  {
+    ArrayList<Estudiante>lista = new ArrayList<Estudiante>();
+    for(Estudiante estudiante : estudiantes)
+    {
+      if (codigo.equals(estudiante.getId())) 
+      {
+        lista.add(estudiante);
+      }
+    }
+    return lista;
+  }
+
+  public ArrayList<Bibliotecario> buscaBiblio(String codigo)
+  {
+    ArrayList<Bibliotecario>lista = new ArrayList<Bibliotecario>();
+    for(Bibliotecario bibliotecario : bibliotecarios)
+    {
+      if (codigo.equals(bibliotecario.getId())) 
+      {
+        lista.add(bibliotecario);
+      }
+    }
+    return lista;
+  }
+  
+  public ArrayList<Libro> buscaLibro(String isbn)
+  {
+    ArrayList<Lista>lista = new ArrayList<Libro>();
+    for(Libro libro : libros)
+    {
+      if (isbn.equals(libro.getISBN()) 
+      {
+        lista.add(libro);
+      }
+    }
+    return lista;
+  }
+
+  public ArrayList<Reserva> buscaLibro(String numeroRe)
+  {
+    ArrayList<Reserva>lista = new ArrayList<Reserva>();
+    for(Reserva reserva : reservas)
+    {
+      if (numeroRe.equals(Reserva.getNumeroReserva()) 
+      {
+        lista.add(reserva);
+      }
     }
     return lista;
   }

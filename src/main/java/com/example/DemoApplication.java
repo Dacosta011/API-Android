@@ -156,7 +156,38 @@ public class DemoApplication
      return datos;
   }
 
-  
+  @RequestMapping("/BuscaEstu")
+  @ResponseBody
+  String BuscaEstu(String codigo) 
+  {
+
+     ArrayList<Estudiante> si = singlen.buscaEstu(codigo);
+     String datos = si.toString();
+
+     return datos;
+  }
+
+  @RequestMapping("/BuscaBiblio")
+  @ResponseBody
+  String BuscaBiblio(String codigo) 
+  {
+
+     ArrayList<Bibliotecario> si = singlen.buscaEstu(codigo);
+     String datos = si.toString();
+
+     return datos;
+  }
+
+  @RequestMapping("/BuscaLibro")
+  @ResponseBody
+  String BuscaLibro(String isbn) 
+  {
+
+     ArrayList<Libro> si = singlen.buscaEstu(codigo);
+     String datos = si.toString();
+
+     return datos;
+  }
 
   public static void main(String[] args) 
   {
