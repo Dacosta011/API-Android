@@ -172,7 +172,7 @@ public class DemoApplication
   String BuscaBiblio(String codigo) 
   {
 
-     ArrayList<Bibliotecario> si = singlen.buscaEstu(codigo);
+     ArrayList<Bibliotecario> si = singlen.buscaBiblio(codigo);
      String datos = si.toString();
 
      return datos;
@@ -183,7 +183,18 @@ public class DemoApplication
   String BuscaLibro(String isbn) 
   {
 
-     ArrayList<Libro> si = singlen.buscaEstu(codigo);
+     ArrayList<Libro> si = singlen.buscaLibro(isbn);
+     String datos = si.toString();
+
+     return datos;
+  }
+
+  @RequestMapping("/BuscaReserva")
+  @ResponseBody
+  String BuscaReserva(String numeroRe) 
+  {
+
+     ArrayList<Reserva> si = singlen.buscaReserva(numeroRe);
      String datos = si.toString();
 
      return datos;

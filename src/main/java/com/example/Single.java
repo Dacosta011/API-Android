@@ -123,7 +123,7 @@ public class Single
   public ArrayList<Bibliotecario> buscaBiblio(String codigo)
   {
     ArrayList<Bibliotecario>lista = new ArrayList<Bibliotecario>();
-    for(Bibliotecario bibliotecario : bibliotecarios)
+    for(Bibliotecario bibliotecario : bibliocarios)
     {
       if (codigo.equals(bibliotecario.getId())) 
       {
@@ -135,7 +135,7 @@ public class Single
   
   public ArrayList<Libro> buscaLibro(String isbn)
   {
-    ArrayList<Lista>lista = new ArrayList<Libro>();
+    ArrayList<Libro>lista = new ArrayList<Libro>();
     for(Libro libro : libros)
     {
       if (isbn.equals(libro.getISBN())) 
@@ -146,12 +146,12 @@ public class Single
     return lista;
   }
 
-  public ArrayList<Reserva> buscaLibro(String numeroRe)
+  public ArrayList<Reserva> buscaReserva(String numeroRe)
   {
     ArrayList<Reserva>lista = new ArrayList<Reserva>();
     for(Reserva reserva : reservas)
     {
-      if (numeroRe.equals(Reserva.getNumeroReserva())) 
+      if (numeroRe.equals(reserva.getNumeroReserva())) 
       {
         lista.add(reserva);
       }
