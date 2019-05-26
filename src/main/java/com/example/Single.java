@@ -212,7 +212,7 @@ public class Single
 
   }
 
-  public String actualizarEstu(nombre ,carrera , correo , contraseña)
+  public String actualizarEstu(String nombre ,String carrera ,String correo ,String contraseña)
   {
     String respuesta;
 
@@ -224,7 +224,7 @@ public class Single
       }
       else if (nombre.equals("") || contraseña.equals("") || nombre.equals("") || carrera.equals(""))
       {
-        respuesta = "Porfavor llenar un espacio... "
+        respuesta = "Porfavor llenar un espacio... ";
       }
       else 
       {
@@ -233,7 +233,7 @@ public class Single
         estu.setCorreo(correo);
         estu.setContraseña(contraseña);
 
-        respuesta = "La informacion se actualizo..."
+        respuesta = "La informacion se actualizo...";
       }
     }
 
