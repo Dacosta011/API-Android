@@ -200,6 +200,52 @@ public class DemoApplication
      return datos;
   }
 
+  @RequestMapping("/ActualizaEstu")
+  @ResponseBody
+  String ActualizaEstu(String nombre ,String carrera , String correo , String contraseña) 
+  {
+
+     String si = singlen.buscaReserva(numeroRe);
+     String datos = si.toString();
+
+     return datos;
+  }
+
+
+  @RequestMapping("/ActualizaBiblio")
+  @ResponseBody
+  String ActualizaBiblio(String nombre, String rol ,String correo ,String contraseña ) 
+  {
+
+     //String si = singlen.buscaReserva(numeroRe);
+     //String datos = si.toString();
+
+     return "hola";
+  }
+
+
+  @RequestMapping("/ActualizaLibro")
+  @ResponseBody
+  String ActualizaLibro(String isbn, String autor, String paClave, String descripcion) 
+  {
+
+     //String si = singlen.buscaReserva(numeroRe);
+     //String datos = si.toString();
+
+     return "datos";
+  }
+
+  /*@RequestMapping("/ActualizaReserva")
+  @ResponseBody
+  String ActualizaReserva(String numeroRe) 
+  {
+
+     ArrayList<Reserva> si = singlen.buscaReserva(numeroRe);
+     String datos = si.toString();
+
+     return datos;
+  }*/
+
   public static void main(String[] args) 
   {
     SpringApplication.run(DemoApplication.class, args);

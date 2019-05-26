@@ -212,6 +212,36 @@ public class Single
 
   }
 
+  public String actualizarEstu(nombre ,carrera , correo , contraseña)
+  {
+    String respuesta;
+
+    for (Estudiante estu : estudiantes) 
+    {
+      if (estu.getCorreo().equals(correo) && estu.getContraseña().equals(contraseña) && estu.getNombre().equals(nombre) && estu.getCarrera().equals(carrera)) 
+      {
+         respuesta = "Tienes que actualizar algun dato... ";
+      }
+      else if (nombre.equals("") || contraseña.equals("") || nombre.equals("") || carrera.equals(""))
+      {
+        respuesta = "Porfavor llenar un espacio... "
+      }
+      else 
+      {
+        estu.setNombre(nombre);
+        estu.setCarrera(carrera);
+        estu.setCorreo(correo);
+        estu.setContraseña(contraseña);
+
+        respuesta = "La informacion se actualizo..."
+      }
+    }
+
+
+
+    return respuesta;
+  }
+
   
 
 
