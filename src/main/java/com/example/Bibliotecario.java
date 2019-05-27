@@ -19,12 +19,12 @@ public class Bibliotecario extends Usuario
         this.telefono = telefono;
     }
 
-    public String getDireccion() {
+    public String getRol() {
         return rol;
     }
 
-    public void setDireccion(String direccion) {
-        this.rol = direccion;
+    public void setRol(String rol) {
+        this.rol = rol;
     }
 
     public String getTelefono() {
