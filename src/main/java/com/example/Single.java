@@ -80,7 +80,7 @@ public class Single
           }
           else if (libro.getCantidad().equals("0"))
           {
-            ret =  "No hay libros suficientes para el prestamo "
+            ret =  "No hay libros suficientes para el prestamo ";
           }
         }
       }
