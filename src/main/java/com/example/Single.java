@@ -31,9 +31,9 @@ public class Single
     estudiantes.add(tempo);
   }
 
-  public void CrearBibliotecario(String dir, String tel, String cor, String con, String nom, String id)
+  public void CrearBibliotecario(String rol, String tel, String cor, String con, String nom, String id)
   {
-    Bibliotecario tempo = new Bibliotecario(dir,tel,cor,con,nom,id);
+    Bibliotecario tempo = new Bibliotecario(rol,tel,cor,con,nom,id);
     bibliocarios.add(tempo);
   }
 

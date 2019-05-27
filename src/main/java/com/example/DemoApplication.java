@@ -44,7 +44,7 @@ public class DemoApplication
 
 	singlen.CrearBibliotecario(rol1,tel,cor,con,nom,id);  	
   	
-	ret = "El estudiante fue registrado correctamente ";
+	ret = "El Bibliotecario fue registrado correctamente ";
    
    	return ret; 
   }
