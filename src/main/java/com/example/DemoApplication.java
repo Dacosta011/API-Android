@@ -96,11 +96,11 @@ public class DemoApplication
 
   	String ret = "";
 
-	singlen.crearPrestamo(cod,is,fe);  	
+	String res = singlen.crearPrestamo(cod,is,fe);  	
   	
 	ret = "El estudiante fue registrado correctamente ";
    
-   	return ret; 
+   	return res; 
   }
 
   @RequestMapping("/eliminarLibro")

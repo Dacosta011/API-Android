@@ -50,8 +50,10 @@ public class Single
 
   } 
 
-  public void crearPrestamo(String isbn , String codigoE, String fechaEn)
+  public String crearPrestamo(String isbn , String codigoE, String fechaEn)
   {
+    String ret = "";
+
     Prestamo tempo =  new Prestamo(isbn,codigoE,fechaEn);
     prestamos.add(tempo);
 
@@ -72,10 +74,19 @@ public class Single
             String resutado = Integer.toString(resta);
 
             libro.setCantidad(resutado);
+
+
+            ret = "El prestamo se fue correcto  ";
+          }
+          else if (libro.getCantidad().equals("0"))
+          {
+            ret =  "No hay libros suficientes para el prestamo "
           }
         }
       }
     }
+
+    return ret;
   } 
 
   public ArrayList<Libro> getLibros()
