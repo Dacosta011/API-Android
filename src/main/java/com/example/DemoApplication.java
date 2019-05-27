@@ -35,14 +35,14 @@ public class DemoApplication
   String CreaBibliotecario(String rol, String telefono2 ,String correo2, String contraseña2 , String nombre2 , String id2) 
   {
   	String nom = nombre2;
-  	String rol = rol;
+  	String rol1 = rol;
   	String tel = telefono2;
   	String cor = correo2;
   	String con = contraseña2;
   	String id = id2;
   	String ret = "";
 
-	singlen.CrearBibliotecario(rol,tel,cor,con,nom,id);  	
+	singlen.CrearBibliotecario(rol1,tel,cor,con,nom,id);  	
   	
 	ret = "El estudiante fue registrado correctamente ";
    
