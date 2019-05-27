@@ -32,17 +32,17 @@ public class DemoApplication
 
   @RequestMapping("/CreaBibliotecario")
   @ResponseBody
-  String CreaBibliotecario(String direccion2, String telefono2 ,String correo2, String contraseña2 , String nombre2 , String id2) 
+  String CreaBibliotecario(String rol, String telefono2 ,String correo2, String contraseña2 , String nombre2 , String id2) 
   {
   	String nom = nombre2;
-  	String dir = direccion2;
+  	String rol = ror;
   	String tel = telefono2;
   	String cor = correo2;
   	String con = contraseña2;
   	String id = id2;
   	String ret = "";
 
-	singlen.CrearBibliotecario(dir,tel,cor,con,nom,id);  	
+	singlen.CrearBibliotecario(rol,tel,cor,con,nom,id);  	
   	
 	ret = "El estudiante fue registrado correctamente ";
    
@@ -217,10 +217,10 @@ public class DemoApplication
   String ActualizaBiblio(String nombre, String rol ,String correo ,String contraseña ) 
   {
 
-     //String si = singlen.buscaReserva(numeroRe);
-     //String datos = si.toString();
+     String si = singlen.actualizarBiblio(nombre,rol,correo,contraseña);
+     String datos = si.toString();
 
-     return "hola";
+     return datos;
   }
 
 
@@ -229,10 +229,10 @@ public class DemoApplication
   String ActualizaLibro(String isbn, String autor, String paClave, String descripcion) 
   {
 
-     //String si = singlen.buscaReserva(numeroRe);
-     //String datos = si.toString();
+     String si = singlen.actualizaLibro(isbn,autor,paClave,descripcion);
+     String datos = si.toString();
 
-     return "datos";
+     return datos;
   }
 
   /*@RequestMapping("/ActualizaReserva")

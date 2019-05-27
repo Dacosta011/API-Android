@@ -242,6 +242,57 @@ public class Single
     return respuesta;
   }
 
+  public String actualizarBiblio(String nombre, String rol ,String correo ,String contraseña)
+  {
+    String respuesta = "";
+
+    for(Bibliotecario biblio : bibliocarios)
+    {
+      if (biblio.getCorreo().equals(correo) && biblio.getContraseña().equals(contraseña) && biblio.getRol().equals(rol) && biblio.getNombre().equals(nombre)) 
+      {
+        respuesta = "Tienes que actualizar algun dato... ";
+      }
+      else 
+      {
+        biblio.setNombre(nombre);
+        biblio.setCorreo(correo);
+        biblio.setContraseña(contraseña);
+        biblio.setRol(rol);
+
+        respuesta = "La informacion se actualizo...";
+      }
+    }
+
+
+    return respuesta;
+  }
+
+  public String actualizaLibro(String isbn, String autor, String paClave, String descripcion) 
+  {
+    String respuesta = "";
+
+    for(Libro libro : lista)
+    {
+      if (libro.getISBN().equals(isbn) && libro.getAutor().equals(autor) && libro.getPalabrasClave().equals(paClave) && libro.getDescripcion().equals(descripcion)) 
+      {
+         respuesta = "Tienes que actualizar algun dato... ";
+      }
+      else
+      {
+        libro.setISBN(isbn);
+        libro.setAutor(autor);
+        libro.setPalabrasClave(paClave);
+        libro.setDescripcion(descripcion);
+
+        respuesta = "La informacion se actualizo...";
+      }
+    }
+
+    return respuesta;
+
+  }
+
+
   
 
 

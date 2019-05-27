@@ -3,28 +3,28 @@ package com.example;
 
 public class Bibliotecario extends Usuario 
 {
-    private String direccion ;
+    private String rol ;
     private String telefono;
 
     public Bibliotecario() 
     {
         super();
-        this.direccion="";
+        this.rol="";
         this.telefono="";
     }
 
-    public Bibliotecario(String direccion, String telefono, String correo, String contraseña, String nombre, String id) {
+    public Bibliotecario(String rol, String telefono, String correo, String contraseña, String nombre, String id) {
         super(correo, contraseña, nombre, id);
-        this.direccion = direccion;
+        this.rol = rol;
         this.telefono = telefono;
     }
 
-    public String getDireccion() {
+    public String getRol() {
         return direccion;
     }
 
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
+    public void setRol(String rol) {
+        this.rol = rol;
     }
 
     public String getTelefono() {
@@ -37,7 +37,7 @@ public class Bibliotecario extends Usuario
 
     @Override
     public String toString() {
-        return super.toString()+","+ direccion + "," + telefono;
+        return super.toString()+","+ rol + "," + telefono;
     }
     
     
