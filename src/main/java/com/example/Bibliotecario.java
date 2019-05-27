@@ -19,12 +19,12 @@ public class Bibliotecario extends Usuario
         this.telefono = telefono;
     }
 
-    public String getRol() {
+    public String getDireccion() {
         return rol;
     }
 
-    public void setRol(String rol) {
-        this.rol = rol;
+    public void setDireccion(String direccion) {
+        this.rol = direccion;
     }
 
     public String getTelefono() {
@@ -39,8 +39,3 @@ public class Bibliotecario extends Usuario
     public String toString() {
         return super.toString()+","+ rol + "," + telefono;
     }
-    
-    
-    
-    
-}
