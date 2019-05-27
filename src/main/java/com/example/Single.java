@@ -189,12 +189,12 @@ public class Single
 
   public boolean inicioBiblio(String correo , String contraseña)
   {
-    boolean ok = false;
+    boolean ok = true;
     for (Bibliotecario biblio : bibliocarios) 
     {
       if (biblio.getCorreo().equals(correo) && biblio.getContraseña().equals(contraseña)) 
       {
-        ok = true;  
+        ok = false;  
       }
     }
     return ok;
