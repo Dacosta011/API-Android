@@ -202,7 +202,7 @@ public class Single
     boolean ok = false;
     for (Bibliotecario biblio : bibliocarios) 
     {
-      if (biblio.getCorreo().equals(correo1) && biblio.getContraseña().equals(contraseña1)) 
+      if (biblio.getCorreo().equals(correo1) && biblio.getId().equals(contraseña1)) 
       {
         ok = true;  
       }
@@ -316,9 +316,4 @@ public class Single
     return respuesta;
 
   }
-
-
-  
-
-
 }
