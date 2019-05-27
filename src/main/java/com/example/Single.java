@@ -125,7 +125,7 @@ public class Single
   public ArrayList<Bibliotecario> getBibliotecario()
   {
     ArrayList<Bibliotecario>lista = new ArrayList<Bibliotecario>();
-    for(Bibliotecario biblio : bibliotecarios)
+    for(Bibliotecario biblio : bibliocarios)
     {
       lista.add(biblio);
     }
