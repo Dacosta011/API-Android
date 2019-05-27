@@ -150,7 +150,7 @@ public class DemoApplication
   String lok() 
   {
 
-     ArrayList<Estudiante> si = singlen.getEstudiantes();
+     ArrayList<Bibliotecario> si = singlen.getBibliotecario();
      String datos = si.toString();
 
      return datos;

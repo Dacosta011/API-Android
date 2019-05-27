@@ -122,6 +122,16 @@ public class Single
     return lista;
   }
 
+  public ArrayList<Bibliotecario> getBibliotecario()
+  {
+    ArrayList<Bibliotecario>lista = new ArrayList<Bibliotecario>();
+    for(Bibliotecario biblio : bibliotecarios)
+    {
+      lista.add(biblio);
+    }
+    return lista;
+  }
+
   public ArrayList<Estudiante> buscaEstu(String codigo)
   {
     ArrayList<Estudiante>lista = new ArrayList<Estudiante>();
@@ -187,14 +197,14 @@ public class Single
     return ok;
   }
 
-  public boolean inicioBiblio(String correo , String contraseña)
+  public boolean inicioBiblio(String correo1 , String contraseña1)
   {
-    boolean ok = true;
+    boolean ok = false;
     for (Bibliotecario biblio : bibliocarios) 
     {
-      if (biblio.getCorreo().equals(correo) && biblio.getContraseña().equals(contraseña)) 
+      if (biblio.getCorreo().equals(correo1) && biblio.getContraseña().equals(contraseña1)) 
       {
-        ok = false;  
+        ok = true;  
       }
     }
     return ok;
