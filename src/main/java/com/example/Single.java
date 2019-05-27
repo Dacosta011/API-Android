@@ -271,7 +271,7 @@ public class Single
   {
     String respuesta = "";
 
-    for(Libro libro : lista)
+    for(Libro libro : libros)
     {
       if (libro.getISBN().equals(isbn) && libro.getAutor().equals(autor) && libro.getPalabrasClave().equals(paClave) && libro.getDescripcion().equals(descripcion)) 
       {

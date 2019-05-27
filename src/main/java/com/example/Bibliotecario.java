@@ -20,7 +20,7 @@ public class Bibliotecario extends Usuario
     }
 
     public String getRol() {
-        return direccion;
+        return rol;
     }
 
     public void setRol(String rol) {

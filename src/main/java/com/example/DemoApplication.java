@@ -35,7 +35,7 @@ public class DemoApplication
   String CreaBibliotecario(String rol, String telefono2 ,String correo2, String contraseña2 , String nombre2 , String id2) 
   {
   	String nom = nombre2;
-  	String rol = ror;
+  	String rol = rol;
   	String tel = telefono2;
   	String cor = correo2;
   	String con = contraseña2;
