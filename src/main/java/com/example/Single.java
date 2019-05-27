@@ -68,26 +68,30 @@ public class Single
           {
             String can = libro.getCantidad();
             int can2 = Integer.parseInt(can);
+            if (can2 != 0) 
+            {
+              int resta = can2-1;
 
-            int resta = can2-1;
+              String resutado = Integer.toString(resta);
 
-            String resutado = Integer.toString(resta);
+              libro.setCantidad(resutado);
 
-            libro.setCantidad(resutado);
-
-
-            ret = "El prestamo se fue correcto  ";
+              ret = "El prestamo del libro se ha realizado correctamente";
+            }
+            else if (can2 == 0) 
+            {
+              ret = "Disculpa, no tenemos disponible este libre aún ";
+            }
           }
-          else if (libro.getCantidad().equals("0"))
-          {
-            ret =  "No hay libros suficientes para el prestamo ";
-          }
+            
         }
+          
       }
     }
+    return ret; 
+  }
 
-    return ret;
-  } 
+
 
   public ArrayList<Libro> getLibros()
   {
