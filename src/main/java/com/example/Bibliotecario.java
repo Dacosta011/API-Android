@@ -39,3 +39,4 @@ public class Bibliotecario extends Usuario
     public String toString() {
         return super.toString()+","+ rol + "," + telefono;
     }
+}
