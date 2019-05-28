@@ -171,6 +171,32 @@ public class Single
     return lista;
   }
 
+  public ArrayList<Libro> buscaLibroNombre(String nombre)
+  {
+    ArrayList<Libro>lista = new ArrayList<Libro>();
+    for(Libro libro : libros)
+    {
+      if (nombre.equals(libro.getNombre()) 
+      {
+        lista.add(libro);
+      }
+    }
+    return lista;
+  }
+
+  public ArrayList<Libro> buscaLibroPaclave(String paClave)
+  {
+    ArrayList<Libro>lista = new ArrayList<Libro>();
+    for(Libro libro : libros)
+    {
+      if (paClave.equals(libro.getPalabrasClave()))
+      {
+        lista.add(libro);
+      }
+    }
+    return lista;
+  }
+
   public ArrayList<Reserva> buscaReserva(String numeroRe)
   {
     ArrayList<Reserva>lista = new ArrayList<Reserva>();
@@ -284,7 +310,7 @@ public class Single
         biblio.setContraseña(contraseña);
         biblio.setRol(rol);
 
-        respuesta = "La informacion se actualizo...";
+        respuesta = "La informacion se actualizo correctamente...";
       }
     }
 
