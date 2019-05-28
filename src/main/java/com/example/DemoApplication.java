@@ -178,9 +178,9 @@ public class DemoApplication
      return datos;
   }
 
-  @RequestMapping("/BuscaLibro")
+  @RequestMapping("/BuscaLibro1")
   @ResponseBody
-  String BuscaLibro(String isbn) 
+  String BuscaLibro1(String isbn) 
   {
 
      ArrayList<Libro> si = singlen.buscaLibro(isbn);
@@ -188,6 +188,28 @@ public class DemoApplication
 
      return datos;
   }
+
+  @RequestMapping("/BuscaLibro0")
+  @ResponseBody
+  String BuscaLibro0(String nombre) 
+  {
+
+     ArrayList<Libro> si = singlen.buscaLibroNombre(nombre);
+     String datos = si.toString();
+
+     return datos;
+  }
+
+  @RequestMapping("/BuscaLibro2")
+  @ResponseBody
+  String BuscaLibro2(String paClave) 
+  {
+
+     ArrayList<Libro> si = singlen.buscaLibroPaclave(paClave);
+     String datos = si.toString();
+
+     return datos;
+   }
 
   @RequestMapping("/BuscaReserva")
   @ResponseBody
