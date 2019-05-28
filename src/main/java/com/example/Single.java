@@ -127,6 +127,7 @@ public class Single
           lista.add(prestamo);
         }
       }
+      return lista;
     }
 
   }
