@@ -331,13 +331,13 @@ public class Single
     return respuesta;
   }
 
-  public String actualizaLibro(String isbn, String autor, String paClave, String descripcion) 
+  public String actualizaLibro(String isbn, String autor, String paClave, String descripcion , String cantidad) 
   {
     String respuesta = "";
 
     for(Libro libro : libros)
     {
-      if (libro.getISBN().equals(isbn) && libro.getAutor().equals(autor) && libro.getPalabrasClave().equals(paClave) && libro.getDescripcion().equals(descripcion)) 
+      if (libro.getISBN().equals(isbn) && libro.getAutor().equals(autor) && libro.getPalabrasClave().equals(paClave) && libro.getDescripcion().equals(descripcion) && libro.getCantidad.equals(cantidad)) 
       {
          respuesta = "Tienes que actualizar algun dato... ";
       }
@@ -347,6 +347,7 @@ public class Single
         libro.setAutor(autor);
         libro.setPalabrasClave(paClave);
         libro.setDescripcion(descripcion);
+        libro.setCantidad(cantidad);
 
         respuesta = "La informacion se actualizo...";
       }

@@ -261,10 +261,10 @@ public class DemoApplication
 
   @RequestMapping("/ActualizaLibro")
   @ResponseBody
-  String ActualizaLibro(String isbn, String autor, String paClave, String descripcion) 
+  String ActualizaLibro(String isbn, String autor, String paClave, String descripcion , String cantidad) 
   {
 
-     String si = singlen.actualizaLibro(isbn,autor,paClave,descripcion);
+     String si = singlen.actualizaLibro(isbn,autor,paClave,descripcion,cantidad);
      String datos = si.toString();
 
      return datos;
