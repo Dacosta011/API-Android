@@ -111,9 +111,9 @@ public class Single
     }
     return lista;
   }
-  public ArrayList<Prestamo> getPrestamos()
+  public ArrayList<Prestamo> mostrarPrestamos()
   {
-    ArrayList<Prestamo>lista=new ArrayList<Presta>();
+    ArrayList<Prestamo>lista=new ArrayList<Prestamo>();
 
     for(Prestamo prestamo : prestamos)
     {
