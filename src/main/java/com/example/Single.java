@@ -111,7 +111,25 @@ public class Single
     }
     return lista;
   }
+  public ArrayList<Prestamo> getPrestamos()
+  {
+    ArrayList<Prestamo>lista=new ArrayList<Presta>();
 
+    for(Prestamo prestamo : prestamos)
+    {
+      for(Estudiante estudiante : estudiantes)
+      {
+        if(prestamo.getCodigoEstu().equals(estudiante.getId()))
+        {
+          String a = estudiante.getNombre();
+
+          prestamo.setCodigoEstu(a);
+          lista.add(prestamo);
+        }
+      }
+    }
+
+  }
   public ArrayList<Estudiante> getEstudiantes()
   {
     ArrayList<Estudiante>lista = new ArrayList<Estudiante>();

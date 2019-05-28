@@ -270,6 +270,17 @@ public class DemoApplication
      return datos;
   }
 
+  @RequestMapping("/MostarPrestamos")
+  @ResponseBody
+  String MostarPrestamos() 
+  {
+
+     ArrayList<Prestamo> si = singlen.mostrarPrestamos();
+     String datos = si.toString();
+
+     return datos;
+  }
+
   /*@RequestMapping("/ActualizaReserva")
   @ResponseBody
   String ActualizaReserva(String numeroRe) 
@@ -285,6 +296,7 @@ public class DemoApplication
   {
     SpringApplication.run(DemoApplication.class, args);
   }
+
 }
 
 
