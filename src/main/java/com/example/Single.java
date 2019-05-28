@@ -337,7 +337,7 @@ public class Single
 
     for(Libro libro : libros)
     {
-      if (libro.getISBN().equals(isbn) && libro.getAutor().equals(autor) && libro.getPalabrasClave().equals(paClave) && libro.getDescripcion().equals(descripcion) && libro.getCantidad.equals(cantidad)) 
+      if (libro.getISBN().equals(isbn) && libro.getAutor().equals(autor) && libro.getPalabrasClave().equals(paClave) && libro.getDescripcion().equals(descripcion) && libro.getCantidad().equals(cantidad)) 
       {
          respuesta = "Tienes que actualizar algun dato... ";
       }
