@@ -150,7 +150,7 @@ public class DemoApplication
   String lok() 
   {
 
-     ArrayList<Bibliotecario> si = singlen.getBibliotecario();
+     ArrayList<Bibliotecario> si = singlen.getLibros();
      String datos = si.toString();
 
      return datos;
@@ -189,9 +189,9 @@ public class DemoApplication
      return datos;
   }
 
-  @RequestMapping("/BuscaLibro0")
+  @RequestMapping("/BuscaLibro")
   @ResponseBody
-  String BuscaLibro0(String nombre) 
+  String BuscaLibro(String nombre) 
   {
 
      ArrayList<Libro> si = singlen.buscaLibroNombre(nombre);
