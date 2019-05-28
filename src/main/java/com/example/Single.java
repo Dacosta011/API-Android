@@ -202,7 +202,7 @@ public class Single
     ArrayList<Libro>lista = new ArrayList<Libro>();
     for(Libro libro : libros)
     {
-      if (paClave.equals(libro.getPalabrasClave()) && nombre.equals(libro.getNombre))
+      if (paClave.equals(libro.getPalabrasClave()) && nombre.equals(libro.getNombre()))
       {
         lista.add(libro);
       }
