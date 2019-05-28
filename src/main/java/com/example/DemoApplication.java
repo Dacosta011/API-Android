@@ -211,6 +211,17 @@ public class DemoApplication
      return datos;
    }
 
+  @RequestMapping("/BuscaLibro3")
+  @ResponseBody
+  String BuscaLibro2(String nombre , String paClave) 
+  {
+
+     ArrayList<Libro> si = singlen.buscaLibroPaclave(paClave);
+     String datos = si.toString();
+
+     return datos;
+   }
+
   @RequestMapping("/BuscaReserva")
   @ResponseBody
   String BuscaReserva(String numeroRe) 
@@ -221,6 +232,8 @@ public class DemoApplication
 
      return datos;
   }
+
+
 
   @RequestMapping("/ActualizaEstu")
   @ResponseBody

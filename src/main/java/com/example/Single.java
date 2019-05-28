@@ -197,6 +197,19 @@ public class Single
     return lista;
   }
 
+  public ArrayList<Libro> buscaLibroMezcla(String nombre , String paClave)
+  {
+    ArrayList<Libro>lista = new ArrayList<Libro>();
+    for(Libro libro : libros)
+    {
+      if (paClave.equals(libro.getPalabrasClave()) && nombre.equals(libro.getNombre))
+      {
+        lista.add(libro);
+      }
+    }
+    return lista;
+  }
+
   public ArrayList<Reserva> buscaReserva(String numeroRe)
   {
     ArrayList<Reserva>lista = new ArrayList<Reserva>();
