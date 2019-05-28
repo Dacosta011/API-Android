@@ -127,9 +127,8 @@ public class Single
           lista.add(prestamo);
         }
       }
-      return lista;
     }
-
+    return lista;
   }
   public ArrayList<Estudiante> getEstudiantes()
   {
