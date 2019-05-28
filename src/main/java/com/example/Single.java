@@ -176,7 +176,7 @@ public class Single
     ArrayList<Libro>lista = new ArrayList<Libro>();
     for(Libro libro : libros)
     {
-      if (nombre.equals(libro.getNombre()) 
+      if (nombre.equals(libro.getNombre())) 
       {
         lista.add(libro);
       }
