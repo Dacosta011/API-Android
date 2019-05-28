@@ -63,7 +63,7 @@ public class DemoApplication
 
 	singlen.CrearLibro(is,nom,des,au,can,pc);  	
   	
-	ret = "El estudiante fue registrado correctamente ";
+	ret = "El libro fue registrado correctamente ";
    
    	return ret; 
   }
@@ -98,7 +98,7 @@ public class DemoApplication
 
 	String res = singlen.crearPrestamo(cod,is,fe);  	
   	
-	ret = "El estudiante fue registrado correctamente ";
+	ret = "El prestamo fue registrado correctamente ";
    
    	return res; 
   }
